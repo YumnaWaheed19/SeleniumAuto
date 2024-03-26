@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!--In TestNG framework, we need to create Testng xml file to run and handle
+multiple test classes. TestNG.xml file is an XML file which contains all the
+test configuration and this XML file can be used to run and organize our
+test.
+In testng.xml file, we configure our test run, set test dependency, include
+or exclude any test, method, class or package and set priority etc
+Testng.xml file is also is used for TestNG Parameters. TestNG
+Parameters are the arguments that we pass to the test methods-->
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="selenium.UploadFile"/>
+      <class name="SeleniumPackage.FindElement"/>
+      <class name="SeleniumPackage.Input"/>
+      <class name="SeleniumPackage.Ajax"/>
+      <class name="SeleniumPackage.WebTable"/>
+      <class name="SeleniumPackage.WindowHandling"/>
+      <class name="selenium.Frame"/>
+      <class name="SeleniumPackage.MoveElement"/>
+      <class name="selenium.WindowPopup"/>
+      <class name="OrangeHRM.addEmployeeTest"/>
+      <class name="selenium.DownloadFile"/>
+      <class name="SeleniumPackage.form"/>
+      <class name="selenium.dropdown"/>
+      <class name="selenium.HandleAuth"/>
+      <class name="SeleniumPackage.Selenium_Alert"/>
+      <class name="SeleniumPackage.button"/>
+      <class name="selenium.Screenshot"/>
+      <class name="selenium.dragdrop"/>
+      <class name="OrangeHRM.LoginTest"/>
+      <class name="SeleniumPackage.drop"/>
+      <class name="seleniumTestPractice.TestAutomation"/>
+      <class name="PageObjectModel.LoginTestClass"/>
+      <class name="SeleniumPackage.drag"/>
+      <class name="selenium.SelAlert"/>
+      <class name="selenium.automateNow"/>
+      <class name="SeleniumPractice.TheInternetHerokuAppTest"/>
+      <class name="SeleniumPackage.LoginTest"/>
+      <class name="seleniumTestPractice.practice2"/>
+      <class name="SeleniumPackage.dropdown"/>
+      <class name="SeleniumPackage.RadioAndCheckbox"/>
+      <class name="SeleniumPackage.ImplicitWait"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

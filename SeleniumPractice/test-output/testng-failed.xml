@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="SeleniumPackage.Input">
+        <methods>
+          <include name="input"/>
+        </methods>
+      </class> <!-- SeleniumPackage.Input -->
+      <class name="SeleniumPackage.FindElement">
+        <methods>
+          <include name="findElement"/>
+        </methods>
+      </class> <!-- SeleniumPackage.FindElement -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

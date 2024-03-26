@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel = "tests">  <!-- if you to run test parallel in two differeny browser | different browsers run parallel-->
+  <test thread-count="5" name="Test in Chrome">
+<parameter name = "browsername" value = "Chrome">
+</parameter>
+<parameter name = "testName" value = "Test in Chrome">
+</parameter>
+    <classes>
+      <class name="selenium.HandleAuth"/>
+    </classes>
+  </test>
+<test thread-count="5" name="Test in Firefox">
+<parameter name = "browsername" value = "Firefox">
+</parameter>
+<parameter name = "testName" value = "Test in Firefox">
+</parameter>
+    <classes>
+      <class name="selenium.HandleAuth"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

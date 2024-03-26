@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<!--
+<suite name="Suite" parallel="classes" thread-count="3">
+
+<parameter name="x" value="2"></parameter>
+<parameter name="y" value="5"></parameter> 
+  <test thread-count="5" name="SoftwareCompany">
+	<parameter name="SoftwareCompany" value="Quest"></parameter>
+	<classes>
+		<class name="TestNGDemo.SoftwareCompany"></class>
+	</classes>
+  </test> 
+  <test thread-count="5" name="Industry">
+	<parameter name="Industry" value="Software Development"></parameter>
+	<classes>
+		<class name="TestNGDemo.Industry"></class>
+	</classes>
+   </test> 
+
+
+ <test thread-count="5" name="TestngDataProvider">
+	<classes>
+		<class name="TestNGDemo.TestngDataProvider"></class>
+	</classes>
+   </test> 
+-->
+<!-- Test -->
+</suite> <!-- Suite -->
