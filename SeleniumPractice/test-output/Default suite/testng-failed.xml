@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.expandingDiv">
+      <class name="IRetryAnalyzerDemo.TestngFailedExecution">
         <methods>
-          <include name="expands"/>
-          <include name="setup"/>
+          <include name="retryAnalysis"/>
         </methods>
-      </class> <!-- selenium.expandingDiv -->
+      </class> <!-- IRetryAnalyzerDemo.TestngFailedExecution -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

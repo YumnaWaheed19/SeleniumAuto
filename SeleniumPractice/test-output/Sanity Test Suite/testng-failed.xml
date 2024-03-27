@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="IRetryAnalyzerDemo.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Retry Analyzer test(failed)">
+    <classes>
+      <class name="IRetryAnalyzerDemo.TestngFailedExecution">
+        <methods>
+          <include name="retryAnalysisTest1"/>
+        </methods>
+      </class> <!-- IRetryAnalyzerDemo.TestngFailedExecution -->
+    </classes>
+  </test> <!-- Retry Analyzer test(failed) -->
+</suite> <!-- Failed suite [Sanity Test Suite] -->
