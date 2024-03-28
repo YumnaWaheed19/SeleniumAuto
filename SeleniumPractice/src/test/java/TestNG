@@ -29,3 +29,7 @@
 -->
 <!-- Test -->
 </suite> <!-- Suite -->
+
+Headless Browser -> means a web browser without user interface
+headless browser are those which actually access the webpage but GUI/Screen is hidden from user
+
