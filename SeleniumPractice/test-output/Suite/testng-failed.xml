@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="ExtentReportDemo.ExtentReportListener"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="SeleniumPackage.Input">
+      <class name="ExtentReportDemo.ExtentReportUsingTestNGListener">
         <methods>
-          <include name="input"/>
+          <include name="testMethod4"/>
+          <include name="testMethod3"/>
         </methods>
-      </class> <!-- SeleniumPackage.Input -->
-      <class name="SeleniumPackage.FindElement">
-        <methods>
-          <include name="findElement"/>
-        </methods>
-      </class> <!-- SeleniumPackage.FindElement -->
+      </class> <!-- ExtentReportDemo.ExtentReportUsingTestNGListener -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

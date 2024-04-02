@@ -9,21 +9,23 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
 
 
-
+//Data Driven testing is test automation framework that store data in spreadsheet and table format
 public class DataDrivenTestingExp {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) throws InterruptedException {
+		//Excel -> Workbook -> sheet -> row -> cell 
 		XSSFSheet sheet;
 		XSSFWorkbook workbook = null;
-//		XSSFRow row;
-//		XSSFCell cell;
+		//XSSFRow row;
+		//XSSFCell cell;
 
 		//create an object of file class to open file 
-		//	String filepath=System.getProperty("user.dir");
-		File excelFile =new File("C:\\Users\\kjkj\\Downloads\\TestData.xlsx");
+		File excelFile =new File("./Files/TestData.xlsx");
 
 		//Create object of fileinputStream to read data from file
 		FileInputStream inputStream = null;
@@ -33,7 +35,7 @@ public class DataDrivenTestingExp {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		//Excel -> Workbook -> sheet ->row->cell 
 		try {
 			workbook=new XSSFWorkbook(inputStream);
@@ -41,22 +43,30 @@ public class DataDrivenTestingExp {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
-//		workbook = new XSSFWorkbook(inputStream);
+		//workbook = new XSSFWorkbook(inputStream);
 		sheet = workbook.getSheetAt(0);
 		int totalRows= sheet.getLastRowNum()+1;
 		int totalCells =sheet.getRow(0).getLastCellNum();
-		
-		for(int currentRow=0;currentRow<totalRows; currentRow++){
-			for(int currentCell=0;currentCell<totalCells;currentCell++) {
-				System.out.println(sheet.getRow(currentRow).getCell(currentCell).toString());
-				System.out.println("\t");
-				
-			}
-			System.out.println("\n");
+
+		for(int currentRow=1;currentRow<totalRows; currentRow++){
+			//			for(int currentCell=1;currentCell<totalCells;currentCell++) {
+			//				System.out.println(sheet.getRow(currentRow).getCell(currentCell).toString());
+			//				System.out.println("\t");
+			//				
+			//			}
+			//			System.out.println("\n");
+
+			System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
+			FirefoxDriver driver= new FirefoxDriver();
+			driver.get("https://www.saucedemo.com/");
+			driver.findElement(By.id("user-name")).sendKeys(sheet.getRow(currentRow).getCell(0).toString());
+			driver.findElement(By.id("password")).sendKeys(sheet.getRow(currentRow).getCell(1).toString());
+			driver.findElement(By.id("login-button")).click();
+			Thread.sleep(3000);
 		}
-		
+
+
+
 
 	}
 
