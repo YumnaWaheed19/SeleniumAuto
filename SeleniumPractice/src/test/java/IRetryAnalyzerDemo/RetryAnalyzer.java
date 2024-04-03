@@ -4,7 +4,7 @@ import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
 public class RetryAnalyzer implements IRetryAnalyzer {
-
+/*IRetryAnalyzer in TestNG is an interface that can retry the failed test*/
 	int counterForRetryAttempt=0;
 	int setMaxLimitOfRetry = 3;
 	

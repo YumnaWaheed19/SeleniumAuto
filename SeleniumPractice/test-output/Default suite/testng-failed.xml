@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ExtentReportDemo.ExtentReportUsingTestNGListener">
+      <class name="DataProvider.DPwithExcel">
         <methods>
-          <include name="testMethod4"/>
-          <include name="testMethod3"/>
+          <include name="login"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- ExtentReportDemo.ExtentReportUsingTestNGListener -->
+      </class> <!-- DataProvider.DPwithExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="ExtentReportDemo.ExtentReportListener"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ExtentReportDemo.ExtentReportUsingTestNGListener">
+      <class name="DataProvider.DPwithExcel">
         <methods>
-          <include name="testMethod4"/>
-          <include name="testMethod3"/>
+          <include name="login"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- ExtentReportDemo.ExtentReportUsingTestNGListener -->
+      </class> <!-- DataProvider.DPwithExcel -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

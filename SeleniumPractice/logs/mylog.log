@@ -1,0 +1,3 @@
+[INFO ] 2024-04-03 13:22:08.177 [main] LoggerDemo - for info only
+[DEBUG] 2024-04-03 13:22:08.179 [main] LoggerDemo - debug message
+[WARN ] 2024-04-03 13:22:08.180 [main] LoggerDemo - warning message

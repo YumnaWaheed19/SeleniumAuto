@@ -15,8 +15,6 @@ public class HomeScreenTest {
 	
 	//TestNG always creates an XML file to execute test cases.
 	
-
-
 	@Test
 	public void launchApplication() {
 		System.out.println("launch App");
